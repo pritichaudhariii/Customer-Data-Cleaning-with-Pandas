@@ -20,7 +20,7 @@ The goal was to transform the raw Excel file into a clean, analysis-ready datase
 4. Handled missing values by replacing with `None`.  
 5. Removed customers flagged as `Do_Not_Contact`.  
 6. Dropped unnecessary columns after splitting.  
-7. Exported the cleaned dataset to `.xlsx` and `.csv`.
+7. Exported the cleaned dataset to `.xlsx`.
 
 📊 Example Results
 
