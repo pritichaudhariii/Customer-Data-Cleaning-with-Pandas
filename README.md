@@ -24,17 +24,19 @@ The goal was to transform the raw Excel file into a clean, analysis-ready datase
 
 📊 Example Results
 
-Before Cleaning:
+**Before Cleaning:**
 
-Phone_Number     Address                          Do_Not_Contact
-123/543-2345     980 Paper Avenue, Pennsylvania   Y
-(876)678|3469    25th Main Street, New York       N
-N/a              123 Middle Earth                 NaN
+| Phone_Number   | Address                        | Do_Not_Contact |
+|----------------|--------------------------------|----------------|
+| 123/543-2345   | 980 Paper Avenue, Pennsylvania | Y              |
+| (876)678|3469  | 25th Main Street, New York     | N              |
+| N/a            | 123 Middle Earth               | NaN            |
 
+**After Cleaning:**
 
-After Cleaning:
+| Phone_Number   | Street            | City          | Zip   | Do_Not_Contact |
+|----------------|------------------|---------------|-------|----------------|
+| 123-543-2345   | 980 Paper Avenue | Pennsylvania  | 18503 | Y              |
+| 876-678-3469   | 25th Main Street | New York      | NaN   | N              |
+| NaN            | 123 Middle Earth | NaN           | NaN   | None           |
 
-Phone_Number     Street               City            Zip      Do_Not_Contact
-123-543-2345     980 Paper Avenue     Pennsylvania    18503    Y
-876-678-3469     25th Main Street     New York        NaN      N
-NaN              123 Middle Earth     NaN             NaN      None
